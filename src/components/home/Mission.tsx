@@ -1,70 +1,60 @@
-const SectionTitle = ({ title, subtitle }) => (
-  <div>
-    <h2 className="text-4xl md:text-6xl font-bold mb-6">{title}</h2>
-    <p className="text-lg md:text-xl mb-10">{subtitle}</p>
-  </div>
-);
-
 const Mission = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-white overflow-hidden py-20">
-  {/* Section heading */}
-  <div className="text-center relative z-10 max-w-3xl mb-16">
-    <SectionTitle 
-      title="Our Mission"
-      subtitle="To empower youth across India — especially in underserved regions — with real-world, practical skills through affordable, hands-on training and mentorship, making them self-reliant and employable."
-    />
-  </div>
-
-  {/* Stacked gradient + images row */}
-  <div className="flex w-full justify-between items-center relative z-10 mt-60 mb-40">
-
-    {/* LEFT STACK - pushed to far left */}
-    <div className="absolute top-[-30px] left-[-0px] -translate-y-1/2">
-      <img
-        src="/Ellipse 12.svg"
-        alt="Gradient Left"
-        className="w-[580px] h-[1300px] object-contain"
-      />
-      <img
-        src="/Industrialsed training.svg"
-        alt="Training Illustration"
-        className="absolute top-1/2 left-1/2 w-[600px] object-contain transform -translate-x-1/2 -translate-y-1/2"
-      />
-    </div>
-
-    {/* CENTER STACK */}
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 mt-10 z-10">
-      <img
-        src="/Ellipse 14.svg"
-        alt="Gradient Center"
-        className="w-[1000px] h-[1000px] object-contain"
-      />
-      <img
-        src="/inclusive learning.svg"
-        alt="Inclusive Illustration"
-        className="absolute top-1/2 left-1/2 w-[600px] object-contain transform -translate-x-1/2 -translate-y-1/2"
-      />
-    </div>
-
-    {/* RIGHT STACK - pushed to far right */}
-    <div className="absolute top-[-50px] right-[-0px] -translate-y-1/2">
-      <img
-        src="/Ellipse 13.svg"
-        alt="Gradient Right"
-        className="w-[600px] h-[1300px] object-contain"
-      />
-      <img
-        src="/Project based approch.svg"
-        alt="Project Illustration"
-        className="absolute top-1/2 left-1/2 w-[600px] object-contain transform -translate-x-1/2 -translate-y-1/2"
-      />
-    </div>
-
-
-  </div>
-</section>
-);
+    <section className="w-full bg-white overflow-hidden h-screen ">
+      {/* Heading and Subheading */}
+      <div className="relative z-10 px-6 pt-10 text-center">
+        <h1 className="text-7xl font-bold text-gray-800 mb-4">Our Mission</h1>
+        <p className="max-w-[660px] mx-auto text-gray-600 text-lg font-bold">
+          To empower youth across India — especially in underserved regions — with
+          real-world, practical skills through affordable, hands-on training and
+          mentorship, making them self-reliant and employable.
+        </p>
+      </div>
+      
+      {/* Illustrations */}
+      <div className="relative flex justify-center items-center min-w-[100%]">
+        {/* Left */}
+        <img
+          src="/Industrialsed training.svg"
+          alt="Industialsed Training"
+          className="absolute w-auto h-[420px] left-[150px] translate-y-[350px] z-10"
+        />
+        {/* Right */}
+        <img
+          src="/Project based approch.svg"
+          alt="Project based approach"
+          className="absolute w-auto h-[420px] right-[150px] translate-y-[350px] z-10"
+        />
+        {/* Center */}
+        <img
+          src="/inclusive learning.svg"
+          alt="Inclusive Learning"
+          className="absolute w-auto h-[350px] top-[200px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
+        />
+      </div>
+      {/* Gradient Background Layer (Now with fixed height) */}
+      <div className="relative w-auto h-[70%]">
+        {/* Gradient image on the left */}
+        <img
+          src="/Ellipse 12.svg"
+          alt="Left Gradient"
+          className="absolute top-0 left-0 w-full h-full -translate-x-[15%] -translate-y-1/5 pointer-events-none select-none"
+        />
+        {/* Gradient image on the right */}
+        <img
+          src="/Ellipse 13.svg"
+          alt="Right Gradient"
+          className="absolute top-0 right-0 w-full h-full translate-x-[15%] translate-y-1/5 pointer-events-none select-none"
+        />
+        {/* Gradient image on the center */}
+        <img
+          src="/Ellipse 14.svg"
+          alt="Center Gradient"
+          className="absolute top-[180px] left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
+        />
+      </div>
+    </section>
+  );
 };
 
 export default Mission;
