@@ -12,18 +12,18 @@ const Mission = () => {
       </div>
       
       {/* Illustrations */}
-      <div className="relative flex justify-center items-center min-w-[100%]">
+      <div className="relative flex justify-center items-center min--[100%]">
         {/* Left */}
         <img
           src="/Industrialsed training.svg"
           alt="Industialsed Training"
-          className="absolute w-auto h-[420px] left-[150px] translate-y-[350px] z-10"
+          className="absolute w-auto h-[400px] left-[100px] translate-y-[350px] z-10"
         />
         {/* Right */}
         <img
           src="/Project based approch.svg"
           alt="Project based approach"
-          className="absolute w-auto h-[420px] right-[150px] translate-y-[350px] z-10"
+          className="absolute w-auto h-[400px] right-[100px] translate-y-[345px] z-10"
         />
         {/* Center */}
         <img
@@ -52,6 +52,16 @@ const Mission = () => {
           alt="Center Gradient"
           className="absolute top-[180px] left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
         />
+        {/*  Sliding Text at Bottom */}
+        <div className="absolute bottom-[-25px] w-full overflow-hidden">
+          <div className="flex animate-slide w-max whitespace-nowrap text-xl font-semibold text-gray-800">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex gap-8 px-4">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aut cupiditate. Delectus quibusdam, a ad natus inventore quam laudantium commodi! Porro cupiditate explicabo impedit adipisci, mollitia ut assumenda. Vel, et!</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
