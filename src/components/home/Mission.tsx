@@ -17,19 +17,19 @@ const Mission = () => {
         <img
           src="/Industrialsed training.svg"
           alt="Industialsed Training"
-          className="absolute w-auto h-[400px] left-[100px] translate-y-[350px] z-10"
+          className="absolute w-auto h-[350px] left-[170px] translate-y-[320px] z-10"
         />
         {/* Right */}
         <img
           src="/Project based approch.svg"
           alt="Project based approach"
-          className="absolute w-auto h-[400px] right-[100px] translate-y-[345px] z-10"
+          className="absolute w-auto h-[350px] right-[150px] translate-y-[310px] z-10"
         />
         {/* Center */}
         <img
           src="/inclusive learning.svg"
           alt="Inclusive Learning"
-          className="absolute w-auto h-[350px] top-[200px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
+          className="absolute w-auto h-[300px] top-[200px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
         />
       </div>
       {/* Gradient Background Layer (Now with fixed height) */}
@@ -53,7 +53,7 @@ const Mission = () => {
           className="absolute top-[180px] left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
         />
         {/*  Sliding Text at Bottom */}
-        <div className="absolute bottom-[-25px] w-full overflow-hidden">
+        <div className="absolute bottom-[35px] w-full overflow-hidden">
           <div className="flex animate-slide w-max whitespace-nowrap text-xl font-semibold text-gray-800">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex gap-8 px-4">
